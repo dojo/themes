@@ -30,3 +30,11 @@ Variables can be used by using `@import` to import the `variables.css` file from
 	background-color: var(--dojo-green);
 }
 ```
+
+## Generating typings
+
+Run `npm run typings` to generate `.m.css.d.ts` files
+
+## Publishing
+
+Run `npm run publish` to generate typings and publish to npm

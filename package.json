@@ -16,7 +16,8 @@
 		"url": "https://github.com/dojo/themes.git"
 	},
 	"scripts": {
-		"typings": "tcm dojo -p *.m.css"
+		"typings": "tcm dojo -p *.m.css",
+		"publish": "npm run typings && npm publish"
 	},
 	"devDependencies": {
 		"typed-css-modules": "0.3.1"
