@@ -8,7 +8,7 @@
 }
 
 .root {
-	border-color: var(--border-width) solid var(--color-border);
+	border: var(--border-width) solid var(--color-border);
 	display: inline-block;
 	font-size: var(--font-size-base);
 	line-height: var(--line-height-base);
