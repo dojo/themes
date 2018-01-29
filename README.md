@@ -9,7 +9,7 @@ Package that contains a collection of Dojo 2 themes.
 Simply `npm i @dojo/themes` into your project and import the theme you require.
 
 ``` ts
-import theme from '@dojo/themes/dojo`;
+import theme from '@dojo/themes/dojo`
 
 render() {
 	return w(Button, { theme }, [ 'Hello World' ]);
@@ -23,7 +23,7 @@ Variables can be used by using `@import` to import the `variables.css` file from
 
 ``` css
 /* myButton.m.css */
-@import '@dojo/themes/dojo/variables.css';
+@import '@dojo/themes/dojo/variables.css'
 
 .root {
 	composes: root from '@dojo/themes/dojo/button.m.css';
