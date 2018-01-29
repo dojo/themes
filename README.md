@@ -33,8 +33,4 @@ Variables can be used by using `@import` to import the `variables.css` file from
 
 ## Generating typings
 
-Run `npm run typings` to generate `.m.css.d.ts` files
-
-## Publishing
-
-Run `npm run publish` to generate typings and publish to npm
+Run `npm run build` to generate `.m.css.d.ts` files
