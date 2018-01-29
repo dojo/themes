@@ -9,7 +9,7 @@ Package that contains a collection of Dojo 2 themes.
 Simply `npm i @dojo/themes` into your project and import the theme you require.
 
 ``` ts
-import theme from '@dojo/themes/dojo`;
+import theme from '@dojo/themes/dojo';
 
 render() {
 	return w(Button, { theme }, [ 'Hello World' ]);
