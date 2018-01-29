@@ -1,0 +1,26 @@
+{
+	"name": "@dojo/themes",
+	"version": "0.1.0-pre",
+	"description": "Dojo 2 Themes",
+	"homepage": "https://dojo.io",
+	"bugs": {
+		"url": "https://github.com/dojo/themes/issues"
+	},
+	"license": "BSD-3-Clause",
+	"main": "main.js",
+	"engines": {
+		"npm": ">=3.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dojo/themes.git"
+	},
+	"scripts": {
+		"build": "tcm dojo -p *.m.css",
+		"build-watch": "tcm dojo -p *.m.css -w"
+	},
+	"devDependencies": {
+		"typed-css-modules": "0.3.1"
+	},
+	"dependencies": {}
+}
