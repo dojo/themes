@@ -1,5 +1,4 @@
 @import './variables.css';
-@import './icons.m.css';
 
 .root,
 .root *,
@@ -29,7 +28,7 @@
 }
 
 .inputWrapper {
-	composes: checkIcon icon from 'icons.m.css';
+	composes: checkIcon icon from './icons.m.css';
 	left: 0;
 	position: absolute;
 	top: calc(var(--grid-base) / 2);
