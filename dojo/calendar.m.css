@@ -12,6 +12,7 @@
 	display: inline-block;
 	font-size: var(--font-size-base);
 	line-height: var(--line-height-base);
+	margin: 0 calc(var(--spacing-large) + 2);
 	position: relative;
 	width: calc((var(--grid-base) * 35) + (var(--border-width) * 4));
 }
