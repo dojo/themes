@@ -1,4 +1,5 @@
 @import './variables.css';
+@import './icons.m.css';
 
 .root {
 	border: var(--border-width) solid var(--color-border);
@@ -36,5 +37,16 @@
 }
 
 .selectedOption {
+	composes: checkIcon;
 	background-color: var(--color-background-faded);
+	padding-right: calc(var(--grid-base) * 4);
+	position: relative;
+}
+
+.selectedOption::before {
+	font-family: 'dojo2BaseTheme';
+	position: absolute;
+	right: var(--grid-base);
+	top: 50%;
+	transform: translateY(-50%);
 }
