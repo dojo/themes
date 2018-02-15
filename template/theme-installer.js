@@ -1,5 +1,4 @@
 var theme = theme.default;
-var _theme;
 
 if (theme) {
 	if (!window.dojoce) {
@@ -7,26 +6,29 @@ if (theme) {
 	}
 
 	if (!window.dojoce.themes) {
-		window.dojoce.themes = {};
+		window.dojoce.themes = {
+			noTheme: {}
+		};
 	}
+
+	window.dojoce.themes[THEME_NAME] = theme;
 
 	if (!window.dojoce.theme) {
 		Object.defineProperty(window.dojoce, 'theme', {
 			set: function(value) {
-				if (value === window.dojo.theme) {
+				value = value === '' ? 'noTheme' : value;
+				if (value === window.dojoce.theme) {
 					return;
 				}
-				if (window.dojo.themes[value]) {
+				if (window.dojoce.themes[value]) {
+					window.dojoce._theme = value;
 					window.dispatchEvent(new CustomEvent('dojo-theme-set', {}));
-					_theme = value;
 				}
 			},
 			get: function() {
-				return _theme;
+				return window.dojoce._theme;
 			}
 		});
 	}
-
-	window.dojoce.themes[THEME_NAME] = theme;
 	window.dojoce.theme = THEME_NAME;
 }
