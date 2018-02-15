@@ -1,5 +1,7 @@
+@import './variables.css';
+
 @font-face {
-  font-family: 'dojo2BaseTheme';
+  font-family: var(--icon-font-family);
   src:
     url('./fonts/dojo2BaseTheme.ttf?nocf9g') format('truetype'),
     url('./fonts/dojo2BaseTheme.woff?nocf9g') format('woff'),
@@ -10,7 +12,7 @@
 
 .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'dojo2BaseTheme' !important;
+  font-family: var(--icon-font-family) !important;
   speak: none;
   font-size: inherit;
   font-style: normal;

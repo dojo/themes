@@ -36,5 +36,16 @@
 }
 
 .selectedOption {
+	composes: checkIcon from './icons.m.css';
 	background-color: var(--color-background-faded);
+	padding-right: calc(var(--grid-base) * 4);
+	position: relative;
+}
+
+.selectedOption::before {
+	font-family: var(--icon-font-family);
+	position: absolute;
+	right: var(--grid-base);
+	top: 50%;
+	transform: translateY(-50%);
 }

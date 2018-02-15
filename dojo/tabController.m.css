@@ -15,6 +15,10 @@
 	box-sizing: border-box;
 }
 
+.tabButtons {
+	display: flex;
+}
+
 .tabButton {
 	border-bottom: var(--border-width) solid var(--color-border);
 	border-left: var(--border-width) solid transparent;
@@ -23,9 +27,10 @@
 	color: var(--color-text-faded);
 	cursor: pointer;
 	display: inline-block;
+	flex: 1;
 	outline: none;
 	overflow: hidden;
-	padding: 15px 0;
+	padding: calc(var(--grid-base)*2) calc(var(--grid-base)/2);
 	position: relative;
 	text-align: center;
 	text-overflow: ellipsis;
@@ -71,6 +76,10 @@
 	content: '✕';
 	display: block;
 	font-size: var(--font-size-small);
+}
+
+.closeable {
+	padding-right: calc(var(--font-size-small) + 6px);
 }
 
 .tab {

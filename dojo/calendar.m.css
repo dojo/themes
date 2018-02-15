@@ -12,6 +12,7 @@
 	display: inline-block;
 	font-size: var(--font-size-base);
 	line-height: var(--line-height-base);
+	margin: 0 calc(var(--spacing-large) + 2px);
 	position: relative;
 	width: calc((var(--grid-base) * 35) + (var(--border-width) * 4));
 }
@@ -135,7 +136,7 @@
 	padding: calc(var(--grid-base) * 1.5) 0;
 	position: absolute;
 	top: 50%;
-	width: calc(var(--spacing-large) + 2);
+	width: calc(var(--spacing-large) + 2px);
 }
 
 .previous i,
