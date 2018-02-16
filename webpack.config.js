@@ -16,7 +16,7 @@ const allPaths = path.join(__dirname, 'dojo');
 function webpackConfigFactory(args) {
 	const config = {
 		entry: {
-			'main': `imports-loader?theme=${path.join(allPaths, 'index.ts')}!${path.join(__dirname, 'template', 'theme-installer.js')}`
+			'dojo': `imports-loader?theme=${path.join(allPaths, 'index.ts')}!${path.join(__dirname, 'template', 'theme-installer.js')}`
 		},
 		output: {
 			filename: "[name]-" + packageJson.version + ".js",
