@@ -17,11 +17,26 @@
 		"url": "https://github.com/dojo/themes.git"
 	},
 	"scripts": {
-		"build": "tcm dojo -p *.m.css",
+		"build": "tcm dojo -p *.m.css && shx rm -r dist && webpack --config webpack.config.js",
 		"build-watch": "tcm dojo -p *.m.css -w"
 	},
 	"devDependencies": {
-		"typed-css-modules": "0.3.1"
-	},
-	"dependencies": {}
+		"@dojo/webpack-contrib": "~0.2.0",
+		"css-loader": "0.28.7",
+		"extract-text-webpack-plugin": "3.0.2",
+		"file-loader": "1.1.5",
+		"imports-loader": "0.7.1",
+		"json-css-module-loader": "^1.0.2",
+		"postcss-cssnext": "3.0.2",
+		"postcss-import": "11.0.0",
+		"postcss-loader": "1.0.0",
+		"shx": "^0.2.2",
+		"slash": "^1.0.0",
+		"style-loader": "0.19.0",
+		"ts-loader": "3.1.1",
+		"typed-css-modules": "0.3.1",
+		"typescript": "2.6.2",
+		"uglifyjs-webpack-plugin": "1.1.0",
+		"webpack": "3.8.1"
+	}
 }

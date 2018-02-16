@@ -1,0 +1,22 @@
+{
+	"version": "2.1.5",
+	"compilerOptions": {
+		"declaration": false,
+		"lib": [
+			"dom",
+			"es5",
+			"es2015.iterable",
+			"es2015.promise",
+			"es2015.symbol",
+			"es2015.symbol.wellknown"
+		],
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"importHelpers": true,
+		"downlevelIteration": true,
+		"removeComments": false,
+		"sourceMap": true,
+		"strict": true,
+		"target": "es5"
+	}
+}
