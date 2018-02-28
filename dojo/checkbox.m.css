@@ -28,7 +28,7 @@
 }
 
 .inputWrapper {
-	composes: checkIcon icon from './icons.m.css';
+	composes: checkIcon icon from './icon.m.css';
 	left: 0;
 	position: absolute;
 	top: calc(var(--grid-base) / 2);
