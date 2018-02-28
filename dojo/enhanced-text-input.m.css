@@ -20,7 +20,7 @@
 }
 
 .input {
-	composes: input from './textinput.m.css';
+	composes: input from './text-input.m.css';
 	flex: 1 1 auto;
 }
 
