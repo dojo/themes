@@ -5,7 +5,7 @@ import * as checkbox from './checkbox.m.css';
 import * as combobox from './combobox.m.css';
 import * as enhancedTextInput from './enhanced-text-input.m.css';
 import * as dialog from './dialog.m.css';
-import * as icons from './icons.m.css';
+import * as icon from './icon.m.css';
 import * as label from './label.m.css';
 import * as listbox from './listbox.m.css';
 import * as progress from './progress.m.css';
@@ -30,7 +30,7 @@ export default {
 	'@dojo/widgets/combobox': combobox,
 	'@dojo/widgets/enhanced-text-input': enhancedTextInput,
 	'@dojo/widgets/dialog': dialog,
-	'@dojo/widgets/icons': icons,
+	'@dojo/widgets/icon': icon,
 	'@dojo/widgets/label': label,
 	'@dojo/widgets/listbox': listbox,
 	'@dojo/widgets/progress': progress,
