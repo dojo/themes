@@ -1,7 +1,6 @@
 {
 	"name": "@dojo/themes",
-	"version": "0.1.4-pre",
-	"private": true,
+	"version": "0.2.0",
 	"description": "Dojo 2 Themes",
 	"homepage": "https://dojo.io",
 	"bugs": {
