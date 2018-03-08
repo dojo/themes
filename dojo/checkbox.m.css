@@ -25,6 +25,9 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
+	background: transparent;
+	border: none;
+	border-radius: 0;
 }
 
 .inputWrapper {

@@ -37,6 +37,7 @@
 	vertical-align: top;
 	white-space: nowrap;
 	width: var(--tab-width);
+	margin: 0;
 }
 
 .tabButton:hover:not(.disabledTabButton):not(.activeTabButton) {
