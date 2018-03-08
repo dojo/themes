@@ -1,8 +1,9 @@
 @import './variables.css';
 
-.toolbar {
+.root {
 	background: var(--color-background);
-	border: var(--border-width) solid var(--color-border);
+	border-top: var(--border-width) solid var(--color-border);
+	border-bottom: var(--border-width) solid var(--color-border);
 	box-sizing: border-box;
 	height: calc(7 * var(--grid-base));
 	padding: calc(2 * var(--grid-base));
@@ -12,15 +13,7 @@
 .title {
 	font-size: var(--font-size-title);
 	margin: 0;
-    font-weight: normal;
-}
-
-.action {
-	padding-right: calc(3 * var(--grid-base));
-}
-
-.action:last-of-type {
-	padding-right: 0;
+	font-weight: normal;
 }
 
 .menuButton {
@@ -29,10 +22,6 @@
 	cursor: pointer;
 	font-size: 0;
 	padding: var(--grid-base);
-	position: absolute;
-	right: var(--grid-base);
-	top: 50%;
-	transform: translateY(-50%);
 }
 
 .menuButton i {
