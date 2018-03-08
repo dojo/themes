@@ -14,6 +14,7 @@
 	min-width: calc(var(--grid-base) * 20);
 	padding: var(--spacing-regular);
 	transition: all var(--transition-duration) var(--transition-easing);
+	margin: 0;
 }
 
 .root:hover,
