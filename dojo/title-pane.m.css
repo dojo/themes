@@ -6,6 +6,7 @@
 	font-size: var(--font-size-base);
 	line-height: var(--line-height-base);
 	overflow: hidden;
+	min-height: calc(var(--font-size-title) + 2 * var(--grid-base));
 }
 
 .root * {
@@ -40,6 +41,9 @@
 	border-left: var(--border-width) solid var(--color-border);
 	border-right: var(--border-width) solid var(--color-border);
 	padding: var(--grid-base);
+}
+
+.contentTransition {
 	transition: margin-top ease-in-out var(--transition-duration);
 }
 
