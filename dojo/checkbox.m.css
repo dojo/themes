@@ -79,7 +79,9 @@
 
 .toggle .inputWrapper {
 	width: auto;
-	position: relative;
+	position: static;
+	display: inline-block;
+	padding-right: var(--grid-base);
 }
 
 .toggle .inputWrapper::before,
