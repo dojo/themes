@@ -27,11 +27,15 @@
 	outline: none;
 }
 
-.input:hover {
-	box-shadow: var(--box-shadow-dimensions-small) color(var(--color-box-shadow));
+.input::placeholder { color: var(--color-text-faded); }
+
+.inputWrapper {
+	transition: box-shadow var(--transition-duration) var(--transition-easing);
 }
 
-.input::placeholder { color: var(--color-text-faded); }
+.inputWrapper:hover {
+	box-shadow: var(--box-shadow-dimensions-small) color(var(--color-box-shadow));
+}
 
 /* disabled and readonly */
 .disabled .input,

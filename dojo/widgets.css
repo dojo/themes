@@ -3,7 +3,6 @@
 @import './calendar.m.css';
 @import './checkbox.m.css';
 @import './combobox.m.css';
-@import './enhanced-text-input.m.css';
 @import './dialog.m.css';
 @import './icon.m.css';
 @import './label.m.css';
@@ -17,6 +16,7 @@
 @import './tab-controller.m.css';
 @import './text-area.m.css';
 @import './text-input.m.css';
+@import './enhanced-text-input.m.css';
 @import './time-picker.m.css';
 @import './title-pane.m.css';
 @import './toolbar.m.css';
