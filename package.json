@@ -20,7 +20,7 @@
 		"build-watch": "tcm dojo -p *.m.css -w"
 	},
 	"devDependencies": {
-		"@dojo/webpack-contrib": "~0.2.0",
+		"@dojo/webpack-contrib": "^2.0.0",
 		"css-loader": "0.28.7",
 		"extract-text-webpack-plugin": "3.0.2",
 		"file-loader": "1.1.5",
