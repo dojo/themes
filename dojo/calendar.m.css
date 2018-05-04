@@ -79,7 +79,6 @@
 
 /* Date picker  */
 .topMatter {
-	display: flex;
 	background: var(--color-background-faded);
 	border-bottom: var(--border-width) solid var(--color-border);
 }
@@ -112,7 +111,6 @@
 .monthTrigger,
 .yearTrigger {
 	color: var(--color-text-primary);
-	flex: 0;
 	font-size: var(--font-size-small);
 	padding: var(--grid-base);
 	text-transform: uppercase;

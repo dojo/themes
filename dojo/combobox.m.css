@@ -34,19 +34,13 @@
 	color: var(--color-text-faded);
 	cursor: pointer;
 	display: block;
-	font-size: 0;
-	line-height: var(--line-height-base);
+	line-height: 1;
 	outline: 0;
 	padding: var(--spacing-regular);
 	position: absolute;
 	right: 0;
 	top: var(--border-width);
 	transition: border-color var(--transition-duration) var(--transition-easing);
-}
-
-.trigger i {
-	font-size: var(--font-size-icon);
-	line-height: var(--line-height-base);
 }
 
 .trigger:focus {
@@ -96,7 +90,7 @@
 	border: var(--border-width) solid transparent;
 	color: var(--color-border);
 	cursor: pointer;
-	font-size: 0;
+	line-height: 1;
 	outline: none;
 	padding: 0;
 	position: absolute;
@@ -107,8 +101,4 @@
 
 .clear:focus {
 	border-color: var(--color-highlight);
-}
-
-.clear i {
-	font-size: var(--font-size-base);
 }
