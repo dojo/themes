@@ -34,6 +34,7 @@
 	color: var(--color-text-faded);
 	cursor: pointer;
 	display: block;
+	font-size: 24px;
 	line-height: 1;
 	outline: 0;
 	padding: var(--spacing-regular);
@@ -90,6 +91,7 @@
 	border: var(--border-width) solid transparent;
 	color: var(--color-border);
 	cursor: pointer;
+	font-size: 16px;
 	line-height: 1;
 	outline: none;
 	padding: 0;
