@@ -104,3 +104,17 @@
 .clear:focus {
 	border-color: var(--color-highlight);
 }
+
+/* styles for backward compatibility with widgets 2.0.0 */
+.trigger,
+.clear {
+	font-size: 0;
+}
+
+.trigger * {
+	font-size: var(--font-size-icon);
+}
+
+.clear * {
+	font-size: var(--font-size-base);
+}
