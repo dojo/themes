@@ -79,7 +79,6 @@
 
 /* Date picker  */
 .topMatter {
-	display: flex;
 	background: var(--color-background-faded);
 	border-bottom: var(--border-width) solid var(--color-border);
 }
@@ -112,7 +111,6 @@
 .monthTrigger,
 .yearTrigger {
 	color: var(--color-text-primary);
-	flex: 0;
 	font-size: var(--font-size-small);
 	padding: var(--grid-base);
 	text-transform: uppercase;
@@ -204,17 +202,13 @@
 
 .monthRadioInput,
 .yearRadioInput {
-	appearance: none;
 	height: 100%;
 	left: 0;
 	margin: 0;
-	outline: none;
+	opacity: 0;
 	position: absolute;
 	top: 0;
 	width: 100%;
-	background: transparent;
-	border: none;
-	border-radius: 0;
 }
 
 .monthRadio:hover .monthRadioLabel,
