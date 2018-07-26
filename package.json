@@ -1,7 +1,7 @@
 {
 	"name": "@dojo/themes",
-	"version": "2.0.2-pre",
-	"description": "Dojo 2 Themes",
+	"version": "3.0.0-pre",
+	"description": "Dojo Themes",
 	"homepage": "https://dojo.io",
 	"bugs": {
 		"url": "https://github.com/dojo/themes/issues"
@@ -16,21 +16,21 @@
 		"url": "https://github.com/dojo/themes.git"
 	},
 	"scripts": {
-		"build": "tcm dojo -p *.m.css && shx rm -rf dist && webpack --config webpack.config.js",
+		"build": "tcm dojo -p *.m.css && rimraf dist && webpack --config webpack.config.js",
 		"build-watch": "tcm dojo -p *.m.css -w"
 	},
 	"devDependencies": {
-		"@dojo/webpack-contrib": "^2.0.0",
+		"@dojo/webpack-contrib": "~3.0.0",
 		"css-loader": "0.28.7",
 		"extract-text-webpack-plugin": "3.0.2",
 		"file-loader": "1.1.5",
 		"imports-loader": "0.7.1",
-		"json-css-module-loader": "^1.0.2",
-		"postcss-cssnext": "3.0.2",
+		"json-css-module-loader": "1.0.2",
+		"postcss-cssnext": "3.1.0",
 		"postcss-import": "11.0.0",
-		"postcss-loader": "1.0.0",
-		"shx": "^0.2.2",
-		"slash": "^1.0.0",
+		"postcss-loader": "2.0.8",
+		"rimraf": "2.6.2",
+		"slash": "1.0.0",
 		"style-loader": "0.19.0",
 		"ts-loader": "3.1.1",
 		"typed-css-modules": "0.3.1",
