@@ -16,15 +16,23 @@ const allPaths = path.join(__dirname, 'dojo');
 function webpackConfigFactory(args) {
 	const config = {
 		entry: {
-			'dojo': `imports-loader?theme=${path.join(allPaths, 'index.ts')}!${path.join(__dirname, 'template', 'theme-installer.js')}`
+			'dojo': [
+				`imports-loader?theme=${path.join(allPaths, 'index.ts')}!${path.join(__dirname, 'template', 'theme-installer.js')}`,
+				path.join(allPaths, 'index.ts')
+			]
 		},
 		output: {
-			filename: "[name]-" + packageJson.version + ".js",
-			path: path.resolve('./dist/dojo')
+			filename: 'index.js',
+			path: path.resolve('./dist/dojo'),
+			library: '[name]',
+			libraryTarget: 'umd'
 		},
 		resolve: {
 			modules: [basePath, path.join(basePath, 'node_modules')],
-			extensions: ['.ts', '.js']
+			extensions: ['.ts', '.js'],
+			alias: {
+				'fonts': path.resolve(__dirname, 'fonts')
+			}
 		},
 		devtool: 'source-map',
 		plugins: [
@@ -32,7 +40,7 @@ function webpackConfigFactory(args) {
 			new webpack.DefinePlugin({ THEME_NAME: JSON.stringify('dojo') }),
 			new UglifyJsPlugin({ sourceMap: true, cache: true }),
 			new ExtractTextPlugin({
-				filename: function (getPath) { return getPath("[name]-" + packageJson.version + ".css"); }
+				filename: function (getPath) { return getPath('index.css'); }
 			})
 		],
 		module: {
@@ -43,13 +51,17 @@ function webpackConfigFactory(args) {
 					use: [
 						{
 							loader: 'ts-loader',
-							options: { instance: 'dojo' }
+							options: { instance: 'dojo', compilerOptions: { declaration: false } }
 						}
 					]
 				},
 				{
 					test: /.*\.(gif|png|jpe?g|svg|eot|ttf|woff|woff2)$/i,
-					loader: 'file-loader?hash=sha512&digest=hex&name=[hash:base64:8].[ext]'
+					loader: 'file-loader?hash=sha512&digest=hex&name=[hash:base64:8].[ext]',
+					options: {
+						outputPath: 'fonts/',
+						publicPath: '/fonts/'
+					}
 				},
 				{
 					include: allPaths,
