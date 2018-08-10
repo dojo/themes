@@ -23,7 +23,7 @@ function webpackConfigFactory(args) {
 		},
 		output: {
 			filename: 'index.js',
-			path: path.resolve('./dist/dojo'),
+			path: path.resolve('./dist/release/dojo'),
 			library: '[name]',
 			libraryTarget: 'umd'
 		},
