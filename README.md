@@ -6,7 +6,9 @@ Package that contains a collection of Dojo themes.
 
 ## Usage
 
-Simply `npm i @dojo/themes` into your project and import the theme you require.
+1. Install `@dojo/themes` with `npm i @dojo/themes`.
+2. Import the theme CSS into your project's `main.css`: `@import '@dojo/themes/dojo`.
+3. Import the theme module and pass it to the widgets you need themed:
 
 ``` javascript
 import theme from '@dojo/themes/dojo';
@@ -33,4 +35,7 @@ Variables can be used by using `@import` to import the `variables.css` file from
 
 ## Generating typings
 
-Run `npm run build` to generate `.m.css.d.ts` files
+The following `npm` scripts are available to facilitate development:
+
+- `build:tcm`: generate `.m.css.d.ts` files
+- `watch`: generate `.m.css.d.ts` files in watch mode
