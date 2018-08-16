@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const TemplatedPathPlugin = require('webpack/lib/TemplatedPathPlugin');
 const CssModulePlugin = require("@dojo/webpack-contrib/css-module-plugin/CssModulePlugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
@@ -16,13 +17,11 @@ const allPaths = path.join(__dirname, 'dojo');
 function webpackConfigFactory(args) {
 	const config = {
 		entry: {
-			'dojo': [
-				`imports-loader?theme=${path.join(allPaths, 'index.ts')}!${path.join(__dirname, 'template', 'theme-installer.js')}`,
-				path.join(allPaths, 'index.ts')
-			]
+			'custom-element': `imports-loader?theme=${path.join(allPaths, 'index.ts')}!${path.join(__dirname, 'template', 'theme-installer.js')}`,
+			dojo: path.join(allPaths, 'index.ts')
 		},
 		output: {
-			filename: 'index.js',
+			filename: '[custom].js',
 			path: path.resolve('./dist/release/dojo'),
 			library: '[name]',
 			libraryTarget: 'umd'
@@ -40,8 +39,22 @@ function webpackConfigFactory(args) {
 			new webpack.DefinePlugin({ THEME_NAME: JSON.stringify('dojo') }),
 			new UglifyJsPlugin({ sourceMap: true, cache: true }),
 			new ExtractTextPlugin({
-				filename: function (getPath) { return getPath('index.css'); }
-			})
+				filename: function (getPath) { return getPath('[custom].css'); }
+			}),
+			new TemplatedPathPlugin(),
+			function () {
+				const compiler = this;
+				const elementName = `dojo-${packageJson.version}`;
+				const distName = 'index';
+				compiler.plugin('compilation', (compilation) => {
+					compilation.mainTemplate.plugin('asset-path', (template, chunkData) => {
+						const chunkName = chunkData && chunkData.chunk && chunkData.chunk.name;
+						return template.indexOf('[custom]') > -1 ?
+							template.replace(/\[custom\]/, chunkName === 'custom-element' ? elementName : distName) :
+							template;
+					});
+				});
+			}
 		],
 		module: {
 			rules: [

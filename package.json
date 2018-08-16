@@ -16,12 +16,11 @@
     "url": "https://github.com/dojo/themes.git"
   },
   "scripts": {
-    "build": "run-s clean build:ts build:tcm copy:raw build:ce",
-    "build:ce": "webpack --config webpack.config.js",
+    "build": "run-s clean build:ts build:tcm copy:raw build:dist",
+    "build:dist": "webpack --config webpack.config.js",
     "build:tcm": "tcm dojo-p *.m.css",
     "build:ts": "tsc --outDir dist/release/dojo",
     "clean": "rimraf dist",
-    "copy:raw:fonts": "cpx \"dojo/fonts/*\" dist/release/dojo/fonts",
     "copy:raw:styles": "cpx \"dojo/*.{d.ts,css}\" dist/release/dojo",
     "copy:raw": "run-s copy:raw:**",
     "dojo-package": "dojo-package",
