@@ -1,6 +1,6 @@
 var theme = theme.default;
 
-if (theme) {
+if (theme && typeof window !== 'undefined') {
 	if (!window.dojoce) {
 		window.dojoce = {};
 	}

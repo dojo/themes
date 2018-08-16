@@ -1,7 +1,7 @@
 {
 	"version": "2.1.5",
 	"compilerOptions": {
-		"declaration": false,
+		"declaration": true,
 		"lib": [
 			"dom",
 			"es5",

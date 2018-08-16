@@ -1,41 +1,53 @@
 {
-	"name": "@dojo/themes",
-	"version": "3.0.2-pre",
-	"description": "Dojo Themes",
-	"homepage": "https://dojo.io",
-	"bugs": {
-		"url": "https://github.com/dojo/themes/issues"
-	},
-	"license": "BSD-3-Clause",
-	"main": "main.js",
-	"engines": {
-		"npm": ">=3.0.0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/dojo/themes.git"
-	},
-	"scripts": {
-		"build": "tcm dojo -p *.m.css && rimraf dist && webpack --config webpack.config.js",
-		"build-watch": "tcm dojo -p *.m.css -w"
-	},
-	"devDependencies": {
-		"@dojo/webpack-contrib": "~3.0.0",
-		"css-loader": "0.28.7",
-		"extract-text-webpack-plugin": "3.0.2",
-		"file-loader": "1.1.5",
-		"imports-loader": "0.7.1",
-		"json-css-module-loader": "1.0.2",
-		"postcss-cssnext": "3.1.0",
-		"postcss-import": "11.0.0",
-		"postcss-loader": "2.0.8",
-		"rimraf": "2.6.2",
-		"slash": "1.0.0",
-		"style-loader": "0.19.0",
-		"ts-loader": "3.1.1",
-		"typed-css-modules": "0.3.1",
-		"typescript": "2.6.2",
-		"uglifyjs-webpack-plugin": "1.1.0",
-		"webpack": "3.8.1"
-	}
+  "name": "@dojo/themes",
+  "version": "3.0.2-pre",
+  "description": "Dojo Themes",
+  "homepage": "https://dojo.io",
+  "bugs": {
+    "url": "https://github.com/dojo/themes/issues"
+  },
+  "license": "BSD-3-Clause",
+  "main": "main.js",
+  "engines": {
+    "npm": ">=3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dojo/themes.git"
+  },
+  "scripts": {
+    "build": "run-s clean build:ts build:tcm copy:raw build:dist",
+    "build:dist": "webpack --config webpack.config.js",
+    "build:tcm": "tcm dojo-p *.m.css",
+    "build:ts": "tsc --outDir dist/release/dojo",
+    "clean": "rimraf dist",
+    "copy:raw:styles": "cpx \"dojo/*.{d.ts,css}\" dist/release/dojo",
+    "copy:raw": "run-s copy:raw:**",
+    "dojo-package": "dojo-package",
+    "dojo-release": "dojo-release",
+    "release": "run-s build dojo-package \"dojo-release -- {@}\" --",
+    "watch": "tcm dojo -p *.m.css -w"
+  },
+  "devDependencies": {
+    "@dojo/scripts": "~3.0.1",
+    "@dojo/webpack-contrib": "~3.0.0",
+    "cpx": "1.5.0",
+    "css-loader": "0.28.7",
+    "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "1.1.5",
+    "imports-loader": "0.7.1",
+    "json-css-module-loader": "1.0.2",
+    "npm-run-all": "4.1.3",
+    "postcss-cssnext": "3.1.0",
+    "postcss-import": "11.0.0",
+    "postcss-loader": "2.0.8",
+    "rimraf": "2.6.2",
+    "slash": "1.0.0",
+    "style-loader": "0.19.0",
+    "ts-loader": "3.1.1",
+    "typed-css-modules": "0.3.1",
+    "typescript": "2.6.2",
+    "uglifyjs-webpack-plugin": "1.1.0",
+    "webpack": "3.8.1"
+  }
 }
