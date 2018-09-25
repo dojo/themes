@@ -27,7 +27,7 @@
     "dojo-release": "dojo-release",
     "version:release": "node scripts/version",
     "version:reset": "node scripts/reset",
-    "release": "run-s \"version:release -- {@}\" build version:reset dojo-package --",
+    "release": "run-s \"version:release -- {@}\" build version:reset dojo-package \"dojo-release -- {@}\" --",
     "watch": "tcm dojo -p *.m.css -w"
   },
   "devDependencies": {
