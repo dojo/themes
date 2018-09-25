@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@dojo/scripts": "~3.0.1",
-    "@dojo/webpack-contrib": "~3.0.0",
+    "@dojo/webpack-contrib": "next",
     "cpx": "1.5.0",
     "css-loader": "0.28.7",
     "extract-text-webpack-plugin": "3.0.2",
