@@ -73,7 +73,7 @@ function webpackConfigFactory(args) {
 					loader: 'file-loader?hash=sha512&digest=hex&name=[hash:base64:8].[ext]',
 					options: {
 						outputPath: 'fonts/',
-						publicPath: '/fonts/'
+						useRelativePath: true
 					}
 				},
 				{
