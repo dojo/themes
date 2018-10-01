@@ -5,6 +5,13 @@ import * as checkbox from './checkbox.m.css';
 import * as combobox from './combobox.m.css';
 import * as dialog from './dialog.m.css';
 import * as icon from './icon.m.css';
+import * as grid from './grid.m.css';
+import * as gridBody from './grid-body.m.css';
+import * as gridCell from './grid-cell.m.css';
+import * as gridFooter from './grid-footer.m.css';
+import * as gridHeader from './grid-header.m.css';
+import * as gridPlaceholderRow from './grid-placeholder-row.m.css';
+import * as gridRow from './grid-row.m.css';
 import * as label from './label.m.css';
 import * as listbox from './listbox.m.css';
 import * as progress from './progress.m.css';
@@ -30,6 +37,13 @@ export default {
 	'@dojo/widgets/combobox': combobox,
 	'@dojo/widgets/dialog': dialog,
 	'@dojo/widgets/icon': icon,
+	'@dojo/widgets/grid': grid,
+	'@dojo/widgets/grid-body': gridBody,
+	'@dojo/widgets/grid-cell': gridCell,
+	'@dojo/widgets/grid-footer': gridFooter,
+	'@dojo/widgets/grid-header': gridHeader,
+	'@dojo/widgets/grid-placeholder-row': gridPlaceholderRow,
+	'@dojo/widgets/grid-row': gridRow,
 	'@dojo/widgets/label': label,
 	'@dojo/widgets/listbox': listbox,
 	'@dojo/widgets/progress': progress,
