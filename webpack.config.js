@@ -8,11 +8,54 @@ const fs = require("fs");
 const loaderUtils = require("loader-utils");
 const slash = require('slash');
 
+const postcssPresetEnv = require('postcss-preset-env');
+const postcssImport = require('postcss-import');
 const basePath = process.cwd();
 const packageJsonPath = path.join(basePath, 'package.json');
 const packageJson = fs.existsSync(packageJsonPath) ? require(packageJsonPath) : {};
 const packageName = packageJson.name || '';
 const allPaths = path.join(__dirname, 'dojo');
+
+function colorToColorMod(style) {
+	style.walkDecls((decl) => {
+		decl.value = decl.value.replace('color(', 'color-mod(');
+	});
+}
+
+const postcssImportConfig = {
+	filter: (path) => {
+		return /.*variables(\.m)?\.css$/.test(path);
+	},
+	load: (filename, importOptions = {}) => {
+		return fs.readFileSync(filename, 'utf8').replace('color(', 'color-mod(');
+	},
+	resolve: (id, basedir, importOptions= {}) => {
+		if (importOptions.filter) {
+			const result = importOptions.filter(id);
+			if (!result) {
+				return id;
+			}
+		}
+		if (id[0] === '~') {
+			return id.substr(1);
+		}
+		return id;
+	}
+};
+
+const postcssPresetConfig = {
+	browsers: ['last 2 versions', 'ie >= 10'],
+	insertBefore: {
+		'color-mod-function': colorToColorMod
+	},
+	features: {
+		'color-mod-function': true,
+		'nesting-rules': true
+	},
+	autoprefixer: {
+		grid: true
+	}
+};
 
 function webpackConfigFactory(args) {
 	const config = {
@@ -97,14 +140,8 @@ function webpackConfigFactory(args) {
 								options: {
 									ident: 'postcss',
 									plugins: [
-										require('postcss-import')(),
-										require('postcss-cssnext')({
-											features: {
-												autoprefixer: {
-													browsers: ['last 2 versions', 'ie >= 10']
-												}
-											}
-										})
+										postcssImport(postcssImportConfig),
+										postcssPresetEnv(postcssPresetConfig)
 									]
 								}
 							}
