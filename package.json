@@ -16,21 +16,19 @@
     "url": "https://github.com/dojo/themes.git"
   },
   "scripts": {
-    "build": "run-s clean build:ts build:tcm copy:raw build:dist",
-    "build:dist": "webpack --config webpack.config.js",
-    "build:tcm": "tcm dojo-p *.m.css",
-    "build:ts": "tsc --outDir dist/release/dojo",
+    "build": "run-s clean build:dojo",
+    "build:dojo": "dojo build theme -n dojo",
     "clean": "rimraf dist",
-    "copy:raw:styles": "cpx \"dojo/*.{d.ts,css}\" dist/release/dojo",
-    "copy:raw": "run-s copy:raw:**",
     "dojo-package": "dojo-package",
     "dojo-release": "dojo-release",
     "version:release": "node scripts/version",
     "version:reset": "node scripts/reset",
-    "release": "run-s \"version:release -- {@}\" build version:reset dojo-package \"dojo-release -- {@}\" --",
-    "watch": "tcm dojo -p *.m.css -w"
+    "release": "run-s \"version:release -- {@}\" build version:reset release:prepare dojo-package \"dojo-release -- {@}\" --",
+    "release:prepare": "shx mv dist/src dist/release"
   },
   "devDependencies": {
+    "@dojo/cli": "^4.0.0",
+    "@dojo/cli-build-theme": "next",
     "@dojo/scripts": "~3.0.1",
     "@dojo/webpack-contrib": "^4.0.0",
     "cpx": "1.5.0",
@@ -44,6 +42,7 @@
     "postcss-loader": "2.0.8",
     "postcss-preset-env": "^6.1.1",
     "rimraf": "2.6.2",
+    "shx": "0.3.2",
     "slash": "1.0.0",
     "style-loader": "0.19.0",
     "ts-loader": "3.1.1",
