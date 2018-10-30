@@ -3,9 +3,9 @@
 @font-face {
   font-family: var(--icon-font-family);
   src:
-    url('./fonts/dojo2BaseTheme.ttf?nocf9g') format('truetype'),
-    url('./fonts/dojo2BaseTheme.woff?nocf9g') format('woff'),
-    url('./fonts/dojo2BaseTheme.svg?nocf9g#dojo2') format('svg');
+    url('./assets/dojo2BaseTheme.ttf?nocf9g') format('truetype'),
+    url('./assets/dojo2BaseTheme.woff?nocf9g') format('woff'),
+    url('./assets/dojo2BaseTheme.svg?nocf9g#dojo2') format('svg');
   font-weight: normal;
   font-style: normal;
 }
