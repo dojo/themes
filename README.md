@@ -9,7 +9,7 @@ Package that contains a collection of Dojo themes.
 ### With Dojo applications
 
 1. Install `@dojo/themes` with `npm i @dojo/themes`.
-2. Import the theme CSS into your project's `main.css`: `@import '@dojo/themes/dojo`.
+2. Import the theme CSS into your project's `main.css`: `@import '~@dojo/themes/dojo/index.css`.
 3. Import the theme module and pass it to the widgets you need themed:
 
 ``` javascript
