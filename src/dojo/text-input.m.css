@@ -24,7 +24,7 @@
 .input:focus {
 	border-color: var(--color-highlight);
 	border-bottom-color: var(--color-highlight);
-	box-shadow: var(--box-shadow-dimensions-small) color(var(--color-highlight) alpha(20%));
+	box-shadow: var(--box-shadow-dimensions-small) var(--box-shadow-focus);
 	outline: none;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .inputWrapper:hover {
-	box-shadow: var(--box-shadow-dimensions-small) color(var(--color-box-shadow));
+	box-shadow: var(--box-shadow-dimensions-small) var(--color-box-shadow);
 }
 
 .input::-ms-clear {
@@ -57,20 +57,20 @@
 
 /* invalid */
 .invalid .input {
-	border-color: color(var(--color-error) saturation(-9%) lightness(+37%));
+	border-color: var(--color-border-invalid);
 	border-bottom-color: var(--color-error);
 }
 
 .invalid .input:focus {
-	box-shadow: var(--box-shadow-dimensions-small) color(var(--color-error) alpha(20%));
+	box-shadow: var(--color-box-shadow-invalid);
 }
 
 /* valid */
 .valid .input {
-	border-color: color(var(--color-success) saturation(-32%) lightness(+55%));
+	border-color: var(--color-border-valid);
 	border-bottom-color: var(--color-success);
 }
 
 .valid .input:focus {
-	box-shadow: var(--box-shadow-dimensions-small) color(var(--color-success) alpha(20%));
+	box-shadow: var(--color-box-shadow-valid);
 }
