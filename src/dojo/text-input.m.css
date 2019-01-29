@@ -62,7 +62,7 @@
 }
 
 .invalid .input:focus {
-	box-shadow: var(--color-box-shadow-invalid);
+	box-shadow: var(--box-shadow-dimensions-small) var(--color-box-shadow-invalid);
 }
 
 /* valid */
@@ -72,5 +72,5 @@
 }
 
 .valid .input:focus {
-	box-shadow: var(--color-box-shadow-valid);
+	box-shadow: var(--box-shadow-dimensions-small) var(--color-box-shadow-valid);
 }
