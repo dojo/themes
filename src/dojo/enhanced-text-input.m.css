@@ -32,7 +32,7 @@
 
 /* focus styles */
 .focused .inputWrapper {
-	box-shadow: var(--box-shadow-dimensions-small) color(var(--color-highlight) alpha(20%));
+	box-shadow: var(--box-shadow-dimensions-small) color-mod(var(--color-highlight) alpha(20%));
 }
 
 .input:focus {

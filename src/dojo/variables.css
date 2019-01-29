@@ -35,13 +35,13 @@
 	--color-background-faded: var(--dojo-light-grey);
 	--color-border: var(--dojo-grey);
 	--color-border-strong: var(--dojo-dark-grey);
-	--color-border-invalid: color(var(--color-error) saturation(-9%) lightness(+37%));
-	--color-border-valid: color(var(--color-success) saturation(-32%) lightness(+55%));
-	--color-box-shadow: color(var(--dojo-black) alpha(20%));
-	--color-box-shadow-strong: color(var(--dojo-black) alpha(50%));
-	--color-box-shadow-focus: color(var(--color-highlight) alpha(20%));
-	--color-box-shadow-invalid: var(--box-shadow-dimensions-small) color(var(--color-error) alpha(20%));
-	--color-box-shadow-valid: var(--box-shadow-dimensions-small) color(var(--color-success) alpha(20%));
+	--color-border-invalid: color-mod(var(--color-error) saturation(-9%) lightness(+37%));
+	--color-border-valid: color-mod(var(--color-success) saturation(-32%) lightness(+55%));
+	--color-box-shadow: color-mod(var(--dojo-black) alpha(20%));
+	--color-box-shadow-strong: color-mod(var(--dojo-black) alpha(50%));
+	--color-box-shadow-focus: color-mod(var(--color-highlight) alpha(20%));
+	--color-box-shadow-invalid: var(--box-shadow-dimensions-small) color-mod(var(--color-error) alpha(20%));
+	--color-box-shadow-valid: var(--box-shadow-dimensions-small) color-mod(var(--color-success) alpha(20%));
 
 	/* Border and shadow */
 	--box-shadow-dimensions-small: 0 2px 2px 0;

@@ -30,7 +30,7 @@
 
 .trigger:focus {
 	border-color: var(--color-highlight);
-	box-shadow: var(--box-shadow-dimensions-small) color(var(--color-highlight) alpha(20%));
+	box-shadow: var(--box-shadow-dimensions-small) color-mod(var(--color-highlight) alpha(20%));
 }
 
 .placeholder {
@@ -88,7 +88,7 @@
 
 .input:focus {
 	border-color: var(--color-highlight);
-	box-shadow: var(--box-shadow-dimensions-small) color(var(--color-highlight) alpha(20%));
+	box-shadow: var(--box-shadow-dimensions-small) color-mod(var(--color-highlight) alpha(20%));
 }
 
 /* IE 10+ */
@@ -106,30 +106,30 @@
 
 .invalid .input,
 .invalid .trigger {
-	border-color: color(var(--color-error) saturation(-9%) lightness(+37%));
+	border-color: color-mod(var(--color-error) saturation(-9%) lightness(+37%));
 	border-bottom-color: var(--color-error);
 }
 .invalid .input:focus,
 .invalid .trigger:focus {
 	border-color: var(--color-error);
-	box-shadow: var(--box-shadow-dimensions-small) color(var(--color-error) alpha(20%));
+	box-shadow: var(--box-shadow-dimensions-small) color-mod(var(--color-error) alpha(20%));
 }
 .invalid .arrow {
-	border-left-color: color(var(--color-error) saturation(-9%) lightness(+37%));
+	border-left-color: color-mod(var(--color-error) saturation(-9%) lightness(+37%));
 	color: var(--color-error);
 }
 
 .valid .input,
 .valid .trigger {
-	border-color: color(var(--color-success) saturation(-32%) lightness(+55%));
+	border-color: color-mod(var(--color-success) saturation(-32%) lightness(+55%));
 	border-bottom-color: var(--color-success);
 }
 .valid .input:focus,
 .valid .trigger:focus {
 	border-color: var(--color-success);
-	box-shadow: var(--box-shadow-dimensions-small) color(var(--color-success) alpha(20%));
+	box-shadow: var(--box-shadow-dimensions-small) color-mod(var(--color-success) alpha(20%));
 }
 .valid .arrow {
-	border-left-color: color(var(--color-success) saturation(-32%) lightness(+55%));
+	border-left-color: color-mod(var(--color-success) saturation(-32%) lightness(+55%));
 	color: var(--color-success);
 }

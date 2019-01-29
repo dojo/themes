@@ -48,7 +48,7 @@
 
 .tabButton:focus:not(.disabledTabButton) {
 	border-color: var(--color-highlight);
-	box-shadow: var(--box-shadow-dimensions-small) color(var(--color-highlight) alpha(20%));
+	box-shadow: var(--box-shadow-dimensions-small) color-mod(var(--color-highlight) alpha(20%));
 }
 
 .activeTabButton {
