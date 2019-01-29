@@ -20,7 +20,7 @@
 .root:hover,
 .root:focus {
 	border-color: var(--color-highlight);
-	box-shadow: var(--box-shadow-dimensions-small) color(var(--color-highlight) alpha(20%));
+	box-shadow: var(--box-shadow-dimensions-small) var(--color-box-shadow-highlight);
 	outline: none;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .pressed .addon {
-	border-left-color: color(var(--color-highlight) saturation(+7%) lightness(+13%));
+	border-left-color: var(--color-highlight-border);
 }
 
 .popup {

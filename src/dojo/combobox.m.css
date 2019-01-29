@@ -77,12 +77,12 @@
 }
 
 .invalid .trigger {
-	border-left-color: color(var(--color-error) saturation(-9%) lightness(+37%));
+	border-left-color: var(--color-border-invalid);
 	color: var(--color-error);
 }
 
 .valid .trigger {
-	border-left-color: color(var(--color-success) saturation(-32%) lightness(+55%));
+	border-left-color: var(--color-border-valid);
 	color: var(--color-success);
 }
 

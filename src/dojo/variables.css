@@ -14,34 +14,26 @@
 	--icon-font-family: 'dojo2BaseTheme';
 
 	/* Color hex values */
-	--dojo-white: #ffffff;
-	--dojo-light-grey: #f4f6f7;
-	--dojo-grey: #d6dde2;
-	--dojo-dark-grey: #5c6c7c;
-	--dojo-black: #000000;
-	--dojo-blue: #006be6;
-	--dojo-red: #eb1313;
-	--dojo-green: #188701;
-
-	/* Color usage names */
-	--color-text-primary: var(--dojo-black);
-	--color-text-faded: var(--dojo-dark-grey);
-	--color-text-inverted: var(--dojo-white);
-	--color-highlight: var(--dojo-blue);
-	--color-success: var(--dojo-green);
-	--color-error: var(--dojo-red);
-	--color-background: var(--dojo-white);
-	--color-background-inverted: var(--dojo-dark-grey);
-	--color-background-faded: var(--dojo-light-grey);
-	--color-border: var(--dojo-grey);
-	--color-border-strong: var(--dojo-dark-grey);
-	--color-border-invalid: color(var(--color-error) saturation(-9%) lightness(+37%));
-	--color-border-valid: color(var(--color-success) saturation(-32%) lightness(+55%));
-	--color-box-shadow: color(var(--dojo-black) alpha(20%));
-	--color-box-shadow-strong: color(var(--dojo-black) alpha(50%));
-	--color-box-shadow-focus: color(var(--color-highlight) alpha(20%));
-	--color-box-shadow-invalid: var(--box-shadow-dimensions-small) color(var(--color-error) alpha(20%));
-	--color-box-shadow-valid: var(--box-shadow-dimensions-small) color(var(--color-success) alpha(20%));
+	--color-text-primary: #000000;
+	--color-text-faded: #5c6c7c;
+	--color-text-inverted: #ffffff;
+	--color-highlight: #006be6;
+	--color-highlight-border: hsl(212.08695652173913, 100%, 58.0980392157%);
+	--color-success: #188701;
+	--color-error: #eb1313;
+	--color-background: #ffffff;
+	--color-background-inverted: #5c6c7c;
+	--color-background-faded: #f4f6f7;
+	--color-border: #d6dde2;
+	--color-border-strong: #5c6c7c;
+	--color-border-invalid: hsl(0, 76.0393700787%, 86.8039215686%);
+	--color-border-valid: hsl(109.70149253731344, 66.5294117647%, 81.6666666667%);
+	--color-box-shadow: rgba(0, 0, 0, 0.2);
+	--color-box-shadow-highlight: rgba(0, 107, 230, 0.2);
+	--color-box-shadow-strong: rgba(0, 0, 0, 0.5);
+	--color-box-shadow-focus: rgba(0, 107, 230, 0.2);
+	--color-box-shadow-invalid: rgba(235, 19, 19, 0.2);
+	--color-box-shadow-valid: rgba(24, 135, 1, 0.2);
 
 	/* Border and shadow */
 	--box-shadow-dimensions-small: 0 2px 2px 0;
