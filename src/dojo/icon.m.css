@@ -1,7 +1,7 @@
 @import './variables.css';
 
 @font-face {
-  font-family: var(--icon-font-family);
+  font-family: 'dojo2BaseTheme';
   src:
     url('./assets/dojo2BaseTheme.ttf?nocf9g') format('truetype'),
     url('./assets/dojo2BaseTheme.woff?nocf9g') format('woff'),

@@ -25,6 +25,7 @@
 	top: 50%;
 	transform: translate(-50%, -50%);
 	width: calc(80 * var(--grid-base));
+	z-index: var(--zindex-dialog);
 	z-index: calc(var(--zindex-dialog) + 1);
 }
 
