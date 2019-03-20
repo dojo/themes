@@ -12,7 +12,7 @@
 
 .icon {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: var(--icon-font-family) !important;
+  font-family: 'dojo2BaseTheme' !important;
   speak: none;
   font-size: inherit;
   font-style: normal;
