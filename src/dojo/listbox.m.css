@@ -43,7 +43,7 @@
 }
 
 .selectedOption::before {
-	font-family: var(--icon-font-family);
+	font-family: 'dojo2BaseTheme';
 	position: absolute;
 	right: var(--grid-base);
 	top: 50%;
