@@ -52,20 +52,30 @@
 
 .dropdown {
 	box-shadow: var(--box-shadow-dimensions-small) var(--color-box-shadow);
-	opacity: 0;
+	display: none;
 	pointer-events: none;
 	position: absolute;
-	transition: opacity var(--transition-duration) var(--transition-easing);
 	width: 100%;
 }
 
-.open {
+.open .dropdown {
+	display: block;
+	pointer-events: all;
+	opacity: 1;
 	z-index: var(--zindex-dropdown);
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: var(--transition-easing);
+	animation-duration: var(--transition-duration);
 }
 
-.open .dropdown {
-	opacity: 1;
-	pointer-events: all;
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 /* native input styles */
