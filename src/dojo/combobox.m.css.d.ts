@@ -3,6 +3,7 @@ export const clearable: string;
 export const trigger: string;
 export const dropdown: string;
 export const open: string;
+export const fadeInOpacity: string;
 export const option: string;
 export const selected: string;
 export const invalid: string;

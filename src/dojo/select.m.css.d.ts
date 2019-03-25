@@ -5,6 +5,7 @@ export const placeholder: string;
 export const arrow: string;
 export const dropdown: string;
 export const open: string;
+export const fadeInOpacity: string;
 export const input: string;
 export const disabled: string;
 export const readonly: string;
