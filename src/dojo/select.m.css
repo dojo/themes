@@ -89,7 +89,6 @@
 	display: block;
 	font-size: inherit;
 	line-height: var(--line-height-base);
-	min-width: 200px;
 	outline: 0;
 	padding: var(--spacing-regular) calc(var(--spacing-regular) * 3) var(--spacing-regular) var(--spacing-regular);
 	transition: border var(--transition-duration) var(--transition-easing);
