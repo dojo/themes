@@ -13,7 +13,7 @@
 	line-height: var(--line-height-base);
 	min-width: calc(var(--grid-base) * 20);
 	padding: var(--spacing-regular);
-	transition: all var(--transition-duration) var(--transition-easing);
+	transition: box-shadow var(--transition-duration) var(--transition-easing);
 	margin: 0;
 }
 

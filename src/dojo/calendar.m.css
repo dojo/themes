@@ -48,7 +48,7 @@
 	font-weight: bold;
 	outline: var(--border-width) solid transparent;
 	padding: var(--grid-base);
-	transition: all var(--transition-duration) var(--transition-easing);
+	transition: color var(--transition-duration) var(--transition-easing), background-color var(--transition-duration) var(--transition-easing);
 }
 
 .todayDate {
@@ -190,7 +190,7 @@
 	display: block;
 	text-decoration: none;
 	padding: var(--grid-base);
-	transition: all var(--transition-duration) var(--transition-easing);
+	transition: color var(--transition-duration) var(--transition-easing), background-color var(--transition-duration) var(--transition-easing);
 }
 
 

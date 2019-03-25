@@ -28,7 +28,6 @@
 .inputWrapper {
 	border: var(--border-width) solid var(--color-border);
 	border-bottom-color: var(--color-border-strong);
-	transition: all var(--transition-duration) var(--transition-easing);
 	width: 100%;
 	display: flex;
 	flex-direction: row;
