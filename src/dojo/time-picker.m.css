@@ -11,7 +11,7 @@
 	font-size: inherit;
 	line-height: var(--line-height-base);
 	padding: var(--grid-base) calc(var(--grid-base) * 3) var(--grid-base) var(--grid-base);
-	transition: all var(--transition-duration) var(--transition-easing);
+	transition: box-shadow var(--transition-duration) var(--transition-easing);
 	width: 100%;
 	border-radius: 0;
 	margin: 0;

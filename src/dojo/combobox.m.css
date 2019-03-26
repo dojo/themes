@@ -54,7 +54,6 @@
 	box-shadow: var(--box-shadow-dimensions-small) var(--color-box-shadow);
 	display: none;
 	position: absolute;
-	transition: all var(--transition-duration) var(--transition-easing);
 	width: 100%;
 }
 

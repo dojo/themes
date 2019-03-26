@@ -35,7 +35,7 @@
 	box-sizing: border-box;
 	content: '';
 	display: block;
-	transition: all var(--transition-duration) var(--transition-easing);
+	transition: transform var(--transition-duration) var(--transition-easing), background-color var(--transition-duration) var(--transition-easing);
 }
 
 .inputWrapper::before {
