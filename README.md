@@ -40,10 +40,3 @@ Variables can be used by using `@import` to import the `variables.css` file from
 	background-color: var(--dojo-green);
 }
 ```
-
-## Generating typings
-
-The following `npm` scripts are available to facilitate development:
-
-- `build:tcm`: generate `.m.css.d.ts` files
-- `watch`: generate `.m.css.d.ts` files in watch mode
