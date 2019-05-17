@@ -29,8 +29,9 @@
 	top: calc(var(--grid-base) / 2);
 }
 
-.inputWrapper::before,
-.inputWrapper::after {
+.radioBackground,
+.radioOuter,
+.radioInner {
 	border-radius: 50%;
 	box-sizing: border-box;
 	content: '';
@@ -38,14 +39,14 @@
 	transition: transform var(--transition-duration) var(--transition-easing), background-color var(--transition-duration) var(--transition-easing);
 }
 
-.inputWrapper::before {
+.radioOuter {
 	background-color: var(--color-background);
 	border: var(--border-width) solid var(--color-border-strong);
 	height: calc(var(--grid-base) * 2);
 	width: calc(var(--grid-base) * 2);
 }
 
-.inputWrapper::after {
+.radioInner {
 	background-color: var(--color-border-strong);
 	height: var(--grid-base);
 	left: calc(var(--grid-base) / 2);
@@ -56,23 +57,23 @@
 }
 
 /* focus styles */
-.focused .inputWrapper:before {
+.focused .radioOuter {
 	border: var(--border-width-emphasized) solid var(--color-highlight);
 	box-shadow: var(--box-shadow-dimensions-small) var(--color-box-shadow-highlight);
 }
 
-.focused .inputWrapper:after {
+.focused .radioInner {
 	background-color: var(--color-highlight);
 }
 
 /* checked style */
-.checked .inputWrapper::after {
+.checked .radioInner {
 	transform: scale(1);
 }
 
 /* disabled and readonly styles */
-.disabled .inputWrapper::before,
-.readonly .inputWrapper::before {
+.disabled .radioOuter,
+.readonly .radioOuter {
 	border-color: var(--color-border);
 	background-color: var(--color-background-faded);
 }
@@ -83,17 +84,17 @@
 }
 
 /* invalid style */
-.invalid .inputWrapper::before {
+.invalid .radioOuter {
 	border-color: var(--color-error);
 }
-.invalid .inputWrapper::after {
+.invalid .radioInner {
 	background-color: var(--color-error);
 }
 
 /* valid style */
-.valid .inputWrapper::before {
+.valid .radioOuter {
 	border-color: var(--color-success);
 }
-.valid .inputWrapper::after {
+.valid .radioInner {
 	background-color: var(--color-success);
 }
