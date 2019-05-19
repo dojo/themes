@@ -21,6 +21,7 @@ import * as rangeSlider from './range-slider.m.css';
 import * as select from './select.m.css';
 import * as slidePane from './slide-pane.m.css';
 import * as slider from './slider.m.css';
+import * as snackbar from './snackbar.m.css';
 import * as splitPane from './split-pane.m.css';
 import * as tabController from './tab-controller.m.css';
 import * as textArea from './text-area.m.css';
@@ -54,6 +55,7 @@ export default {
 	'@dojo/widgets/select': select,
 	'@dojo/widgets/slide-pane': slidePane,
 	'@dojo/widgets/slider': slider,
+	'@dojo/widgets/snackbar': snackbar,
 	'@dojo/widgets/split-pane': splitPane,
 	'@dojo/widgets/tab-controller': tabController,
 	'@dojo/widgets/text-area': textArea,
