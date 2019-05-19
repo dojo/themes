@@ -1,6 +1,7 @@
 import * as accordionPane from './accordion-pane.m.css';
 import * as button from './button.m.css';
 import * as calendar from './calendar.m.css';
+import * as card from './card.m.css';
 import * as checkbox from './checkbox.m.css';
 import * as combobox from './combobox.m.css';
 import * as dialog from './dialog.m.css';
@@ -34,6 +35,7 @@ export default {
 	'@dojo/widgets/accordion-pane': accordionPane,
 	'@dojo/widgets/button': button,
 	'@dojo/widgets/calendar': calendar,
+	'@dojo/widgets/card': card,
 	'@dojo/widgets/checkbox': checkbox,
 	'@dojo/widgets/combobox': combobox,
 	'@dojo/widgets/dialog': dialog,
