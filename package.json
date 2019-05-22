@@ -16,8 +16,9 @@
     "url": "https://github.com/dojo/themes.git"
   },
   "scripts": {
-    "build": "run-s clean build:dojo",
+    "build": "run-s clean build:dojo build:material",
     "build:dojo": "dojo build theme -n dojo",
+    "build:material": "dojo build theme -n material",
     "clean": "rimraf dist",
     "dojo-package": "dojo-package",
     "dojo-release": "dojo-release",
@@ -28,8 +29,9 @@
   },
   "devDependencies": {
     "@dojo/cli": "^5.0.0",
-    "@dojo/cli-build-theme": "4.0.0-alpha.3",
+    "@dojo/cli-build-theme": "5.0.0",
     "@dojo/scripts": "~3.1.0",
+    "@material/button": "^2.1.1",
     "cpx": "1.5.0",
     "npm-run-all": "4.1.5",
     "rimraf": "2.6.2",
