@@ -13,6 +13,7 @@
 	--line-height-base: 24px;
 
 	/* Color hex values */
+	--color-dark: #333;
 	--color-text-primary: #000000;
 	--color-text-faded: #5c6c7c;
 	--color-text-inverted: #ffffff;
@@ -39,6 +40,7 @@
 	--box-shadow-dimensions-large: 0 9px 16px 0;
 	--border-width: 1px;
 	--border-width-emphasized: 2px;
+	--border-radius: 4px;
 
 	/* Transitions */
 	--transition-duration: 0.25s;
