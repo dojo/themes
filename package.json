@@ -28,8 +28,8 @@
     "release:prepare": "shx mv dist/src dist/release"
   },
   "devDependencies": {
-    "@dojo/cli": "6.0.0-rc.1",
-    "@dojo/cli-build-theme": "6.0.0-rc.1",
+    "@dojo/cli": "^6.0.0",
+    "@dojo/cli-build-theme": "^6.0.0",
     "@dojo/scripts": "~3.1.0",
     "@material/button": "^2.1.1",
     "cpx": "1.5.0",
