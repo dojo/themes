@@ -1,1 +1,38 @@
-.root { }
+.root {
+	display: flex;
+	align-items: center;
+}
+
+.inputWrapper {
+	composes: mdc-checkbox from '@material/checkbox/dist/mdc.checkbox.css';
+}
+
+.input {
+	composes: mdc-checkbox__native-control from '@material/checkbox/dist/mdc.checkbox.css';
+}
+
+.background {
+	display: unset;
+	composes: mdc-checkbox__background from '@material/checkbox/dist/mdc.checkbox.css';
+}
+
+.checkmark {
+	composes: mdc-checkbox__checkmark from '@material/checkbox/dist/mdc.checkbox.css';
+}
+
+.checkmarkPath {
+	composes: mdc-checkbox__checkmark-path from '@material/checkbox/dist/mdc.checkbox.css';
+}
+
+.mixedMark {
+	composes: mdc-checkbox__mixedmark from '@material/checkbox/dist/mdc.checkbox.css';
+}
+
+.ripple {
+	display: unset;
+	composes: mdc-checkbox__ripple from '@material/checkbox/dist/mdc.checkbox.css';
+}
+
+.disabled {
+	composes: mdc-checkbox--disabled from '@material/checkbox/dist/mdc.checkbox.css';
+}
