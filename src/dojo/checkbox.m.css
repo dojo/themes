@@ -11,10 +11,6 @@
 	display: none;
 }
 
-.ripple {
-	display: none;
-}
-
 .root {
 	display: block;
 	font-size: var(--font-size-base);
