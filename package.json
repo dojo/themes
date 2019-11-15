@@ -33,6 +33,7 @@
     "@dojo/scripts": "~3.1.0",
     "@material/button": "^2.1.1",
     "@material/radio": "^3.2.0",
+    "@material/tab": "^4.0.0",
     "cpx": "1.5.0",
     "npm-run-all": "4.1.5",
     "rimraf": "2.6.2",
