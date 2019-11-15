@@ -1,0 +1,17 @@
+.root {
+	composes: mdc-chip from '@material/chips/dist/mdc.chips.css'
+}
+
+.label {
+	composes: mdc-text from '@material/chips/dist/mdc.chips.css';
+}
+
+.closeIcon {
+	cursor: pointer;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.disabled {}

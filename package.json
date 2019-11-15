@@ -33,6 +33,7 @@
     "@dojo/scripts": "~3.1.0",
     "@material/button": "^2.1.1",
     "@material/checkbox": "^4.0.0",
+    "@material/chips": "^4.0.0",
     "@material/radio": "^3.2.0",
     "@material/tab": "^4.0.0",
     "cpx": "1.5.0",
