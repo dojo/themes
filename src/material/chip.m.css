@@ -2,11 +2,21 @@
 	composes: mdc-chip from '@material/chips/dist/mdc.chips.css'
 }
 
+.iconWrapper, .closeIconWrapper {
+	composes: mdc-chip__icon from '@material/chips/dist/mdc.chips.css';
+	overflow: hidden;
+}
+
+.iconWrapper {
+	composes: mdc-chip__icon--leading from '@material/chips/dist/mdc.chips.css';
+}
+
 .label {
 	composes: mdc-text from '@material/chips/dist/mdc.chips.css';
 }
 
-.closeIcon {
+.closeIconWrapper {
+	composes: mdc-chip__icon--trailing from '@material/chips/dist/mdc.chips.css';
 	cursor: pointer;
 }
 
