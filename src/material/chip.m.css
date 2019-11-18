@@ -12,7 +12,7 @@
 }
 
 .label {
-	composes: mdc-text from '@material/chips/dist/mdc.chips.css';
+	composes: mdc-chip__text from '@material/chips/dist/mdc.chips.css';
 }
 
 .closeIconWrapper {
