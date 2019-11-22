@@ -16,14 +16,26 @@
 	composes: mdc-checkbox__background from '@material/checkbox/dist/mdc.checkbox.css';
 }
 
-.checkmark {
-	composes: mdc-checkbox__checkmark from '@material/checkbox/dist/mdc.checkbox.css';
+.background::after {
+	content: "";
+	opacity: 0;
 }
 
-.checkmarkPath {
-	composes: mdc-checkbox__checkmark-path from '@material/checkbox/dist/mdc.checkbox.css';
+.checked .background::after {
+	opacity: 1;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 7px;
+	height: 14px;
+	border: solid 2px var(--mdc-theme-surface);
+	border-left: none;
+	border-top: none;
+	transform: translate(3.5px, -0.5px) rotate(45deg);
+	box-sizing: border-box;
 }
 
-.disabled {
+.disabled, .readonly {
 	composes: mdc-checkbox--disabled from '@material/checkbox/dist/mdc.checkbox.css';
 }

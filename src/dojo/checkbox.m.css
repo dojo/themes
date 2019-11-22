@@ -7,10 +7,6 @@
 	box-sizing: border-box;
 }
 
-.background {
-	display: none;
-}
-
 .root {
 	display: block;
 	font-size: var(--font-size-base);
