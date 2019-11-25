@@ -1,97 +1,125 @@
-@import './variables.css';
-
 @font-face {
-  font-family: 'dojo2BaseTheme';
-  src:
-    url('./assets/dojo2BaseTheme.ttf?nocf9g') format('truetype'),
-    url('./assets/dojo2BaseTheme.woff?nocf9g') format('woff'),
-    url('./assets/dojo2BaseTheme.svg?nocf9g#dojo2') format('svg');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'dojo';
+	src:
+		url('./fonts/dojo.ttf?fkcsox') format('truetype'),
+		url('./fonts/dojo.woff?fkcsox') format('woff'),
+		url('./fonts/dojo.svg?fkcsox#dojo') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
-.icon {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'dojo2BaseTheme' !important;
-  speak: none;
-  font-size: inherit;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: inherit;
+.root {}
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.icon {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'dojo' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.downIcon:before {
+	content: "\f078";
+}
+
+.leftIcon:before {
+	content: "\f053";
+}
+
+.rightIcon:before {
+	content: "\f054";
+}
+
+.closeIcon:before {
+	content: "\f00d";
 }
 
 .plusIcon:before {
-  content: "\e145";
+	content: "\f067";
 }
+
 .minusIcon:before {
-  content: "\e15b";
+	content: "\f068";
 }
+
 .checkIcon:before {
-  content: "\e5ca";
+	content: "\f00c";
 }
-.closeIcon:before {
-  content: "\e5cd";
-}
-.leftIcon:before {
-  content: "\e314";
-}
-.rightIcon:before {
-  content: "\e315";
-}
+
 .upIcon:before {
-  content: "\e316";
+	content: "\f077";
 }
-.downIcon:before {
-  content: "\e313";
-}
+
 .upAltIcon:before {
-  content: "\e5c7";
+	content: "\f0d8";
 }
+
 .downAltIcon:before {
-  content: "\e5c5";
+	content: "\f0d7";
 }
+
 .searchIcon:before {
-  content: "\e8b6";
+	content: "\f002";
 }
+
 .barsIcon:before {
-  content: "\e5d2";
+	content: "\f0c9";
 }
+
 .settingsIcon:before {
-  content: "\e8b8";
+	content: "\f013";
 }
+
 .alertIcon:before {
-  content: "\e002";
+	content: "\f06a";
 }
+
 .helpIcon:before {
-  content: "\e887";
+	content: "\f059";
 }
+
 .infoIcon:before {
-  content: "\e88e";
+	content: "\f05a";
 }
+
 .phoneIcon:before {
-  content: "\e0cd";
+	content: "\f095";
 }
+
 .editIcon:before {
-  content: "\e254";
+	content: "\f040";
 }
+
 .dateIcon:before {
-  content: "\e916";
+	content: "\f133";
 }
+
 .linkIcon:before {
-  content: "\e157";
+	content: "\f127";
 }
+
 .locationIcon:before {
-  content: "\e8b4";
+	content: "\f041";
 }
+
 .secureIcon:before {
-  content: "\e899";
+	content: "\f023";
 }
+
 .mailIcon:before {
-  content: "\e0e1";
+	content: "\f0e0";
+}
+
+.eyeIcon:before {
+	content: "\f06e";
+}
+
+.eyeSlashIcon:before {
+	content: "\f070";
 }
