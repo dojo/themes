@@ -1,5 +1,6 @@
 import * as accordionPane from './accordion-pane.m.css';
 import * as button from './button.m.css';
+import * as outlinedButton from './outlined-button.m.css';
 import * as calendar from './calendar.m.css';
 import * as checkbox from './checkbox.m.css';
 import * as combobox from './combobox.m.css';
@@ -46,6 +47,7 @@ export default {
 	'@dojo/widgets/grid-row': gridRow,
 	'@dojo/widgets/label': label,
 	'@dojo/widgets/listbox': listbox,
+	'@dojo/widgets/outlined-button': outlinedButton,
 	'@dojo/widgets/progress': progress,
 	'@dojo/widgets/radio': radio,
 	'@dojo/widgets/select': select,
