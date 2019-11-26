@@ -6,3 +6,5 @@ export const action: string;
 export const stacked: string;
 export const leading: string;
 export const open: string;
+export const error: string;
+export const success: string;

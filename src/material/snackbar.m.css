@@ -31,3 +31,9 @@
 .open {
 	composes: mdc-snackbar--open from '@material/snackbar/dist/mdc.snackbar.css';
 }
+
+.error {
+}
+
+.success {
+}
