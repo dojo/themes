@@ -1,12 +1,17 @@
 @import './variables.css';
 
 .root {
+	composes: root from './button.m.css';
     box-shadow: var(--box-shadow-dimensions-small) var(--color-box-shadow);
 }
 
 .root:hover,
 .root:focus {
     box-shadow: var(--box-shadow-dimensions-small) var(--color-box-shadow-highlight)
+}
+
+.disabled {
+	composes: disabled from './button.m.css';
 }
 
 .disabled:hover {
