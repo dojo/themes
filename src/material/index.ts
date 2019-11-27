@@ -1,5 +1,6 @@
 import * as accordionPane from './accordion-pane.m.css';
 import * as button from './button.m.css';
+import * as raisedButton from './raised-button.m.css';
 import * as outlinedButton from './outlined-button.m.css';
 import * as calendar from './calendar.m.css';
 import * as checkbox from './checkbox.m.css';
@@ -50,6 +51,7 @@ export default {
 	'@dojo/widgets/outlined-button': outlinedButton,
 	'@dojo/widgets/progress': progress,
 	'@dojo/widgets/radio': radio,
+	'@dojo/widgets/raised-button': raisedButton,
 	'@dojo/widgets/select': select,
 	'@dojo/widgets/slide-pane': slidePane,
 	'@dojo/widgets/slider': slider,
