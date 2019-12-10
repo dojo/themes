@@ -1,3 +1,5 @@
+## The `@dojo/themes` repository has been deprecated. Dojo themes have been merged into [`@dojo/widgets`](https://github.com/dojo/widgets).
+
 # Dojo Themes
 
 Package that contains a collection of Dojo themes.
